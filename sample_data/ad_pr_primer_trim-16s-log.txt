@@ -1,0 +1,2817 @@
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT10_S1_L001_1_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT10_S1_L001_21_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT10_S1_L001_1_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT10_S1_L001_21_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 10.321 s (8.225 µs/read; 7.30 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,254,948
+  Read 1 with adapter:               1,239,101 (98.7%)
+  Read 2 with adapter:               1,122,010 (89.4%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):     1,254,948 (100.0%)
+
+Total basepairs processed:   753,846,649 bp
+  Read 1:   377,272,970 bp
+  Read 2:   376,573,679 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    709,234,460 bp (94.1%)
+  Read 1:   356,225,366 bp
+  Read 2:   353,009,094 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 410 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 88.3%
+  C: 6.8%
+  G: 3.2%
+  T: 1.7%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	400	19608.6	0	400
+5	3	1225.5	0	3
+9	1	4.8	0	0 1
+12	2	0.1	1	0 2
+23	1	0.0	1	0 1
+27	1	0.0	1	0 1
+74	1	0.0	1	0 1
+135	1	0.0	1	0 1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 1238691 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	418	19608.6	0	418
+4	1	4902.1	0	1
+12	1	0.1	1	0 1
+13	17	0.0	1	10 7
+14	34	0.0	1	3 31
+15	69	0.0	1	13 56
+16	10753	0.0	1	741 10012
+17	1222223	0.0	1	1097513 124710
+18	5171	0.0	1	410 4761
+19	1	0.0	1	0 1
+53	3	0.0	4	0 0 0 2 1
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 725 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 39.6%
+  C: 14.6%
+  G: 11.9%
+  T: 33.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	620	19608.6	0	620
+4	1	4902.1	0	1
+5	91	1225.5	0	91
+7	10	76.6	0	10
+8	1	19.1	0	1
+10	1	1.2	1	0 1
+12	1	0.1	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 1121285 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	487	19608.6	0	487
+4	3	4902.1	0	3
+5	7	1225.5	0	7
+6	17	306.4	0	17
+10	5	1.2	1	1 4
+11	4	0.3	1	3 1
+14	2	0.0	1	1 1
+15	3	0.0	1	0 3
+16	3	0.0	1	1 2
+17	4	0.0	1	0 4
+18	20	0.0	1	3 16 1
+19	438	0.0	1	6 48 384
+20	23202	0.0	2	733 15582 6887
+21	1091579	0.0	2	724232 264219 103128
+22	4439	0.0	2	320 2698 1421
+23	11	0.0	2	0 2 9
+60	3	0.0	5	0 1 0 0 1 1
+61	18	0.0	5	0 0 0 1 5 12
+62	592	0.0	5	0 19 48 111 191 223
+63	184	0.0	5	0 2 11 30 53 88
+64	257	0.0	5	0 2 12 43 83 117
+65	6	0.0	5	0 0 0 0 5 1
+69	1	0.0	5	0 0 0 0 0 1
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT11_S1_L001_2_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT11_S1_L001_22_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT11_S1_L001_2_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT11_S1_L001_22_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 19.285 s (15.802 µs/read; 3.80 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,220,396
+  Read 1 with adapter:               1,205,952 (98.8%)
+  Read 2 with adapter:               1,112,742 (91.2%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):     1,220,396 (100.0%)
+
+Total basepairs processed:   733,029,701 bp
+  Read 1:   366,877,105 bp
+  Read 2:   366,152,596 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    689,195,061 bp (94.0%)
+  Read 1:   346,389,221 bp
+  Read 2:   342,805,840 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 347 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 84.7%
+  C: 12.4%
+  G: 0.9%
+  T: 2.0%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	319	19068.7	0	319
+5	6	1191.8	0	6
+61	1	0.0	1	0 1
+75	3	0.0	1	0 3
+85	2	0.0	1	0 2
+134	2	0.0	1	0 2
+135	12	0.0	1	0 12
+136	1	0.0	1	0 1
+229	1	0.0	1	0 1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 1205605 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	388	19068.7	0	388
+4	1	4767.2	0	1
+6	1	297.9	0	1
+12	2	0.1	1	0 2
+13	17	0.0	1	10 7
+14	41	0.0	1	3 38
+15	39	0.0	1	9 30
+16	10478	0.0	1	740 9738
+17	1189626	0.0	1	1073227 116399
+18	5005	0.0	1	424 4581
+19	4	0.0	1	0 4
+50	2	0.0	4	0 0 2
+54	1	0.0	4	0 0 0 1
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 731 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 41.6%
+  C: 16.1%
+  G: 11.8%
+  T: 30.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	608	19068.7	0	608
+4	3	4767.2	0	3
+5	97	1191.8	0	97
+6	2	297.9	0	2
+7	12	74.5	0	12
+8	2	18.6	0	2
+9	1	4.7	0	0 1
+10	2	1.2	1	0 2
+11	3	0.3	1	0 3
+16	1	0.0	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 1112011 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	350	19068.7	0	350
+4	1	4767.2	0	1
+5	1	1191.8	0	1
+6	9	297.9	0	9
+7	1	74.5	0	1
+11	1	0.3	1	1
+12	1	0.1	1	1
+15	2	0.0	1	1 1
+16	7	0.0	1	1 6
+17	9	0.0	1	5 4
+18	29	0.0	1	2 27
+19	502	0.0	1	7 68 427
+20	23664	0.0	2	945 17244 5475
+21	1082653	0.0	2	817742 203487 61424
+22	4310	0.0	2	511 2792 1007
+23	12	0.0	2	0 4 8
+41	2	0.0	4	1 0 1
+60	2	0.0	5	0 0 0 0 0 2
+61	15	0.0	5	0 0 1 0 3 11
+62	283	0.0	5	0 1 24 38 85 135
+63	53	0.0	5	0 0 1 6 16 30
+64	104	0.0	5	0 2 6 13 35 48
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT15_S1_L001_3_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT15_S1_L001_23_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT15_S1_L001_3_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT15_S1_L001_23_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 12.798 s (16.349 µs/read; 3.67 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            782,819
+  Read 1 with adapter:                 773,480 (98.8%)
+  Read 2 with adapter:                 690,732 (88.2%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       782,819 (100.0%)
+
+Total basepairs processed:   470,213,689 bp
+  Read 1:   235,344,053 bp
+  Read 2:   234,869,636 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    442,556,641 bp (94.1%)
+  Read 1:   222,204,073 bp
+  Read 2:   220,352,568 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 244 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 84.4%
+  C: 12.3%
+  G: 1.2%
+  T: 2.0%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	225	12231.5	0	225
+5	1	764.5	0	1
+27	1	0.0	1	0 1
+75	1	0.0	1	0 1
+133	1	0.0	1	0 1
+134	2	0.0	1	0 2
+135	11	0.0	1	0 11
+141	1	0.0	1	0 1
+197	1	0.0	1	0 1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 773236 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	286	12231.5	0	286
+12	1	0.0	1	0 1
+13	15	0.0	1	11 4
+14	26	0.0	1	5 21
+15	35	0.0	1	5 30
+16	6900	0.0	1	447 6453
+17	762898	0.0	1	687885 75013
+18	3071	0.0	1	222 2849
+19	4	0.0	1	0 4
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 608 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 42.9%
+  C: 12.7%
+  G: 14.1%
+  T: 30.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	528	12231.5	0	528
+4	1	3057.9	0	1
+5	68	764.5	0	68
+7	7	47.8	0	7
+10	3	0.7	1	0 3
+120	1	0.0	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 690124 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	311	12231.5	0	311
+4	2	3057.9	0	2
+5	12	764.5	0	12
+6	3	191.1	0	3
+7	1	47.8	0	1
+12	2	0.0	1	0 2
+13	1	0.0	1	1
+14	3	0.0	1	0 3
+16	5	0.0	1	1 4
+17	1	0.0	1	0 1
+18	9	0.0	1	0 9
+19	294	0.0	1	4 29 261
+20	14391	0.0	2	494 9886 4011
+21	671567	0.0	2	462815 152988 55764
+22	2538	0.0	2	234 1573 731
+23	6	0.0	2	0 0 6
+59	1	0.0	5	0 0 0 0 0 1
+60	2	0.0	5	0 0 0 1 0 1
+61	29	0.0	5	0 0 2 5 7 15
+62	539	0.0	5	0 15 44 110 162 208
+63	133	0.0	5	0 2 8 21 36 66
+64	265	0.0	5	0 10 25 39 72 119
+65	9	0.0	5	0 0 0 2 0 7
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT1_S1_L001_0_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT1_S1_L001_20_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT1_S1_L001_0_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT1_S1_L001_20_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 20.959 s (16.228 µs/read; 3.70 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,291,581
+  Read 1 with adapter:               1,275,796 (98.8%)
+  Read 2 with adapter:               1,149,576 (89.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):     1,291,581 (100.0%)
+
+Total basepairs processed:   775,718,361 bp
+  Read 1:   388,199,309 bp
+  Read 2:   387,519,052 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    730,192,020 bp (94.1%)
+  Read 1:   366,527,293 bp
+  Read 2:   363,664,727 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 430 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 91.4%
+  C: 5.6%
+  G: 1.2%
+  T: 1.9%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	414	20181.0	0	414
+4	1	5045.2	0	1
+5	5	1261.3	0	5
+12	1	0.1	1	0 1
+27	1	0.0	1	0 1
+28	1	0.0	1	0 1
+135	7	0.0	1	0 7
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 1275366 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	371	20181.0	0	371
+10	3	1.2	1	3
+11	2	0.3	1	2
+12	3	0.1	1	2 1
+13	16	0.0	1	4 12
+14	31	0.0	1	2 29
+15	73	0.0	1	9 64
+16	11537	0.0	1	732 10805
+17	1257917	0.0	1	1131865 126052
+18	5408	0.0	1	391 5017
+54	5	0.0	4	0 0 0 3 2
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 905 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 43.1%
+  C: 14.0%
+  G: 11.9%
+  T: 30.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	782	20181.0	0	782
+4	2	5045.2	0	2
+5	100	1261.3	0	100
+7	14	78.8	0	14
+8	3	19.7	0	3
+10	4	1.2	1	0 4
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 1148671 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	17393	20181.0	0	17393
+4	12	5045.2	0	12
+5	7	1261.3	0	7
+6	27	315.3	0	27
+9	1	4.9	0	0 1
+12	3	0.1	1	0 3
+14	3	0.0	1	1 2
+15	1	0.0	1	1
+16	1	0.0	1	0 1
+17	10	0.0	1	5 5
+18	13	0.0	1	3 10
+19	395	0.0	1	7 56 332
+20	23146	0.0	2	740 15336 7070
+21	1102048	0.0	2	705828 280953 115267
+22	4090	0.0	2	384 2338 1368
+23	8	0.0	2	0 5 3
+60	4	0.0	5	0 0 0 0 0 4
+61	53	0.0	5	0 0 3 9 12 29
+62	847	0.0	5	0 24 84 147 270 322
+63	220	0.0	5	0 3 20 36 55 106
+64	385	0.0	5	0 2 25 68 130 160
+65	3	0.0	5	0 0 0 0 0 3
+84	1	0.0	5	0 0 0 0 0 1
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT20_S1_L001_5_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT20_S1_L001_25_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT20_S1_L001_5_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT20_S1_L001_25_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 18.454 s (15.666 µs/read; 3.83 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,177,996
+  Read 1 with adapter:               1,163,167 (98.7%)
+  Read 2 with adapter:               1,052,912 (89.4%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):     1,177,996 (100.0%)
+
+Total basepairs processed:   707,395,317 bp
+  Read 1:   353,941,072 bp
+  Read 2:   353,454,245 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    665,527,959 bp (94.1%)
+  Read 1:   334,178,772 bp
+  Read 2:   331,349,187 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 378 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 81.0%
+  C: 16.7%
+  G: 1.1%
+  T: 1.3%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	326	18406.2	0	326
+5	7	1150.4	0	7
+11	1	0.3	1	0 1
+12	2	0.1	1	0 2
+57	1	0.0	1	0 1
+66	1	0.0	1	0 1
+69	2	0.0	1	0 2
+102	1	0.0	1	0 1
+103	2	0.0	1	0 2
+134	4	0.0	1	0 4
+135	28	0.0	1	0 28
+136	3	0.0	1	0 3
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 1162789 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	388	18406.2	0	388
+10	1	1.1	1	1
+11	1	0.3	1	0 1
+12	3	0.1	1	0 3
+13	10	0.0	1	4 6
+14	30	0.0	1	4 26
+15	78	0.0	1	21 57
+16	10856	0.0	1	694 10162
+17	1146417	0.0	1	1025314 121103
+18	5001	0.0	1	394 4607
+53	1	0.0	4	0 0 0 0 1
+54	3	0.0	4	0 0 0 3
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 763 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 38.3%
+  C: 18.3%
+  G: 13.0%
+  T: 30.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	674	18406.2	0	674
+4	2	4601.5	0	2
+5	67	1150.4	0	67
+6	1	287.6	0	1
+7	9	71.9	0	9
+8	3	18.0	0	3
+9	1	4.5	0	0 1
+10	2	1.1	1	0 2
+11	2	0.3	1	0 2
+13	1	0.0	1	0 1
+135	1	0.0	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 1052149 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	79	18406.2	0	79
+4	7	4601.5	0	7
+6	2	287.6	0	2
+7	45	71.9	0	45
+11	5	0.3	1	3 2
+14	1	0.0	1	1
+15	1	0.0	1	0 1
+16	2	0.0	1	0 2
+17	3	0.0	1	0 3
+18	27	0.0	1	4 22 1
+19	395	0.0	1	7 51 337
+20	21981	0.0	2	795 14875 6311
+21	1024968	0.0	2	704827 234910 85231
+22	3937	0.0	2	399 2382 1156
+23	11	0.0	2	0 5 6
+25	1	0.0	2	0 0 1
+60	3	0.0	5	0 0 0 0 1 2
+61	35	0.0	5	0 0 0 10 10 15
+62	384	0.0	5	0 9 27 68 114 166
+63	84	0.0	5	0 0 2 13 27 42
+64	174	0.0	5	0 1 9 22 47 95
+65	4	0.0	5	0 0 0 1 0 3
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT21_S1_L001_6_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT21_S1_L001_26_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT21_S1_L001_6_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT21_S1_L001_26_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 3.588 s (15.430 µs/read; 3.89 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            232,544
+  Read 1 with adapter:                 229,224 (98.6%)
+  Read 2 with adapter:                 192,368 (82.7%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       232,544 (100.0%)
+
+Total basepairs processed:   139,737,983 bp
+  Read 1:    69,927,647 bp
+  Read 2:    69,810,336 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    131,808,448 bp (94.3%)
+  Read 1:    66,032,863 bp
+  Read 2:    65,775,585 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 10 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 40.0%
+  C: 60.0%
+  G: 0.0%
+  T: 0.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	5	3633.5	0	5
+52	1	0.0	1	0 1
+70	1	0.0	1	0 1
+94	1	0.0	1	0 1
+104	1	0.0	1	0 1
+135	1	0.0	1	0 1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 229214 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	64	3633.5	0	64
+13	3	0.0	1	2 1
+14	5	0.0	1	0 5
+15	11	0.0	1	3 8
+16	2346	0.0	1	175 2171
+17	225819	0.0	1	202058 23761
+18	965	0.0	1	78 887
+19	1	0.0	1	0 1
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 279 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 39.4%
+  C: 22.2%
+  G: 15.4%
+  T: 22.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	239	3633.5	0	239
+4	1	908.4	0	1
+5	33	227.1	0	33
+6	1	56.8	0	1
+7	1	14.2	0	1
+8	1	3.5	0	1
+11	1	0.1	1	0 1
+64	1	0.0	1	0 1
+134	1	0.0	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 192089 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	85	3633.5	0	85
+4	9	908.4	0	9
+5	1	227.1	0	1
+6	4	56.8	0	4
+7	2	14.2	0	2
+16	1	0.0	1	0 1
+17	1	0.0	1	0 1
+18	4	0.0	1	1 3
+19	84	0.0	1	0 2 82
+20	3895	0.0	2	162 2442 1291
+21	187309	0.0	2	118846 47985 20478
+22	570	0.0	2	61 307 202
+23	2	0.0	2	0 1 1
+60	2	0.0	5	0 0 0 0 2
+61	5	0.0	5	0 0 0 1 2 2
+62	69	0.0	5	0 1 7 9 13 39
+63	23	0.0	5	0 0 1 3 6 13
+64	22	0.0	5	0 0 2 6 3 11
+65	1	0.0	5	0 0 1
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT25_S1_L001_7_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT25_S1_L001_27_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT25_S1_L001_7_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT25_S1_L001_27_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 13.827 s (15.500 µs/read; 3.87 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            892,023
+  Read 1 with adapter:                 881,936 (98.9%)
+  Read 2 with adapter:                 789,406 (88.5%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       892,023 (100.0%)
+
+Total basepairs processed:   535,798,028 bp
+  Read 1:   268,100,049 bp
+  Read 2:   267,697,979 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    504,273,735 bp (94.1%)
+  Read 1:   253,115,501 bp
+  Read 2:   251,158,234 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 71 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 78.9%
+  C: 8.5%
+  G: 4.2%
+  T: 8.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	62	13937.9	0	62
+5	2	871.1	0	2
+9	1	3.4	0	0 1
+12	1	0.1	1	0 1
+75	2	0.0	1	0 2
+76	2	0.0	1	0 2
+133	1	0.0	1	0 1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 881865 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	220	13937.9	0	220
+13	14	0.0	1	7 7
+14	32	0.0	1	1 31
+15	43	0.0	1	15 28
+16	8532	0.0	1	570 7962
+17	869056	0.0	1	784281 84775
+18	3965	0.0	1	327 3638
+19	1	0.0	1	0 1
+54	2	0.0	4	0 0 0 2
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 636 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 36.6%
+  C: 17.3%
+  G: 13.5%
+  T: 32.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	545	13937.9	0	545
+4	1	3484.5	0	1
+5	76	871.1	0	76
+6	1	217.8	0	1
+7	10	54.4	0	10
+8	3	13.6	0	3
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 788770 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	953	13937.9	0	953
+4	18	3484.5	0	18
+5	2	871.1	0	2
+6	8	217.8	0	8
+14	2	0.0	1	0 2
+15	2	0.0	1	0 2
+16	4	0.0	1	0 4
+17	2	0.0	1	2
+18	26	0.0	1	4 22
+19	327	0.0	1	4 46 277
+20	16215	0.0	2	558 10217 5440
+21	767974	0.0	2	481543 202825 83606
+22	3112	0.0	2	233 1852 1027
+23	6	0.0	2	0 0 6
+60	2	0.0	5	0 0 0 0 0 2
+61	7	0.0	5	0 0 0 1 3 3
+62	62	0.0	5	0 1 2 6 15 38
+63	23	0.0	5	0 0 1 4 9 9
+64	21	0.0	5	0 0 1 2 4 14
+65	4	0.0	5	0 0 0 1 1 2
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT2_S1_L001_4_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT2_S1_L001_24_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT2_S1_L001_4_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT2_S1_L001_24_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 12.642 s (16.012 µs/read; 3.75 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            789,494
+  Read 1 with adapter:                 779,992 (98.8%)
+  Read 2 with adapter:                 687,717 (87.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       789,494 (100.0%)
+
+Total basepairs processed:   474,320,338 bp
+  Read 1:   237,419,378 bp
+  Read 2:   236,900,960 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    446,638,991 bp (94.2%)
+  Read 1:   224,168,093 bp
+  Read 2:   222,470,898 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 158 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 82.9%
+  C: 12.7%
+  G: 2.5%
+  T: 1.9%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	139	12335.8	0	139
+5	12	771.0	0	12
+21	1	0.0	1	0 1
+45	1	0.0	1	0 1
+72	1	0.0	1	0 1
+135	2	0.0	1	0 2
+136	1	0.0	1	0 1
+142	1	0.0	1	0 1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 779834 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	224	12335.8	0	224
+13	11	0.0	1	3 8
+14	21	0.0	1	3 18
+15	44	0.0	1	12 32
+16	7044	0.0	1	437 6607
+17	769175	0.0	1	693957 75218
+18	3311	0.0	1	244 3067
+19	4	0.0	1	0 4
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 648 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 39.8%
+  C: 16.2%
+  G: 9.4%
+  T: 34.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	556	12335.8	0	556
+4	4	3084.0	0	4
+5	76	771.0	0	76
+7	8	48.2	0	8
+8	2	12.0	0	2
+11	1	0.2	1	0 1
+12	1	0.0	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 687069 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	477	12335.8	0	477
+4	6	3084.0	0	6
+5	1	771.0	0	1
+6	15	192.7	0	15
+7	29	48.2	0	29
+11	1	0.2	1	0 1
+14	3	0.0	1	0 3
+18	13	0.0	1	1 12
+19	273	0.0	1	2 36 235
+20	13748	0.0	2	508 9276 3964
+21	669412	0.0	2	454201 154886 60325
+22	2593	0.0	2	301 1523 769
+23	4	0.0	2	0 1 3
+60	2	0.0	5	0 0 0 0 1 1
+61	16	0.0	5	0 0 0 3 3 10
+62	293	0.0	5	0 2 20 56 85 130
+63	57	0.0	5	0 1 3 10 11 32
+64	120	0.0	5	0 0 6 17 37 60
+65	5	0.0	5	0 0 0 1 2 2
+68	1	0.0	5	0 0 0 0 0 1
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT30_S1_L001_8_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT30_S1_L001_28_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT30_S1_L001_8_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT30_S1_L001_28_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 15.064 s (15.893 µs/read; 3.78 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            947,781
+  Read 1 with adapter:                 937,249 (98.9%)
+  Read 2 with adapter:                 876,962 (92.5%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       947,781 (100.0%)
+
+Total basepairs processed:   569,311,604 bp
+  Read 1:   284,884,141 bp
+  Read 2:   284,427,463 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    534,983,611 bp (94.0%)
+  Read 1:   268,963,471 bp
+  Read 2:   266,020,140 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 319 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 88.7%
+  C: 8.2%
+  G: 0.6%
+  T: 2.5%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	310	14809.1	0	310
+4	1	3702.3	0	1
+5	4	925.6	0	4
+26	1	0.0	1	0 1
+135	3	0.0	1	0 3
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 936930 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	227	14809.1	0	227
+10	2	0.9	1	2
+11	1	0.2	1	1
+12	2	0.1	1	0 2
+13	14	0.0	1	7 7
+14	42	0.0	1	6 36
+15	57	0.0	1	7 50
+16	9465	0.0	1	631 8834
+17	922679	0.0	1	829766 92913
+18	4438	0.0	1	344 4094
+19	3	0.0	1	0 3
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 320 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 30.0%
+  C: 19.7%
+  G: 14.1%
+  T: 36.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	284	14809.1	0	284
+5	31	925.6	0	31
+7	2	57.8	0	2
+8	1	14.5	0	1
+10	1	0.9	1	0 1
+11	1	0.2	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 876642 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	159	14809.1	0	159
+4	4	3702.3	0	4
+6	3	231.4	0	3
+10	3	0.9	1	3
+11	2	0.2	1	2
+13	1	0.0	1	1
+14	3	0.0	1	1 2
+15	3	0.0	1	2 1
+16	4	0.0	1	0 4
+17	1	0.0	1	0 1
+18	25	0.0	1	2 23
+19	360	0.0	1	3 42 315
+20	19373	0.0	2	719 13982 4672
+21	852779	0.0	2	600662 187701 64416
+22	3509	0.0	2	447 2173 889
+23	17	0.0	2	0 3 14
+60	1	0.0	5	0 0 0 0 1
+61	7	0.0	5	0 0 0 2 0 5
+62	205	0.0	5	0 6 15 32 65 87
+63	80	0.0	5	0 0 8 13 19 40
+64	101	0.0	5	0 1 1 18 27 54
+65	2	0.0	5	0 0 0 1 0 1
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT33_S1_L001_9_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT33_S1_L001_29_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT33_S1_L001_9_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT33_S1_L001_29_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 15.398 s (15.436 µs/read; 3.89 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            997,558
+  Read 1 with adapter:                 986,135 (98.9%)
+  Read 2 with adapter:                 918,619 (92.1%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       997,558 (100.0%)
+
+Total basepairs processed:   599,247,318 bp
+  Read 1:   299,876,338 bp
+  Read 2:   299,370,980 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    563,214,113 bp (94.0%)
+  Read 1:   283,122,100 bp
+  Read 2:   280,092,013 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 269 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 85.1%
+  C: 11.9%
+  G: 1.9%
+  T: 1.1%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	242	15586.8	0	242
+5	5	974.2	0	5
+26	1	0.0	1	0 1
+74	1	0.0	1	0 1
+75	7	0.0	1	0 7
+76	2	0.0	1	0 2
+115	3	0.0	1	0 3
+134	1	0.0	1	0 1
+135	6	0.0	1	0 6
+215	1	0.0	1	0 1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 985866 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	257	15586.8	0	257
+6	1	243.5	0	1
+11	1	0.2	1	1
+13	12	0.0	1	6 6
+14	28	0.0	1	3 25
+15	38	0.0	1	4 34
+16	9200	0.0	1	677 8523
+17	971931	0.0	1	876222 95709
+18	4394	0.0	1	358 4036
+19	1	0.0	1	0 1
+54	3	0.0	4	0 0 0 2 1
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 506 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 44.3%
+  C: 14.8%
+  G: 12.6%
+  T: 28.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	435	15586.8	0	435
+4	2	3896.7	0	2
+5	61	974.2	0	61
+6	1	243.5	0	1
+7	3	60.9	0	3
+8	1	15.2	0	1
+11	1	0.2	1	0 1
+12	1	0.1	1	0 1
+13	1	0.0	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 918113 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	216	15586.8	0	216
+4	4	3896.7	0	4
+6	4	243.5	0	4
+10	1	1.0	1	0 1
+11	3	0.2	1	0 3
+12	1	0.1	1	0 1
+13	2	0.0	1	1 1
+16	4	0.0	1	0 4
+17	5	0.0	1	3 2
+18	33	0.0	1	5 28
+19	433	0.0	1	4 63 366
+20	20020	0.0	2	682 14979 4359
+21	893402	0.0	2	678675 166821 47906
+22	3531	0.0	2	414 2341 776
+23	11	0.0	2	0 4 7
+60	1	0.0	5	0 0 0 0 1
+61	13	0.0	5	0 0 0 2 4 7
+62	253	0.0	5	0 3 8 41 74 127
+63	41	0.0	5	0 2 0 5 15 19
+64	135	0.0	5	0 1 3 19 39 73
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+Running external command line application. This may print messages to stdout and/or stderr.
+The commands to be run are below. These commands cannot be manually re-run as they will depend on temporary files that no longer exist.
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT10_S1_L001_1_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT10_S1_L001_21_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT10_S1_L001_1_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT10_S1_L001_21_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT11_S1_L001_2_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT11_S1_L001_22_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT11_S1_L001_2_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT11_S1_L001_22_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT15_S1_L001_3_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT15_S1_L001_23_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT15_S1_L001_3_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT15_S1_L001_23_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT1_S1_L001_0_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT1_S1_L001_20_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT1_S1_L001_0_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT1_S1_L001_20_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT20_S1_L001_5_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT20_S1_L001_25_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT20_S1_L001_5_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT20_S1_L001_25_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT21_S1_L001_6_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT21_S1_L001_26_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT21_S1_L001_6_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT21_S1_L001_26_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT25_S1_L001_7_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT25_S1_L001_27_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT25_S1_L001_7_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT25_S1_L001_27_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT2_S1_L001_4_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT2_S1_L001_24_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT2_S1_L001_4_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT2_S1_L001_24_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT30_S1_L001_8_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT30_S1_L001_28_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT30_S1_L001_8_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT30_S1_L001_28_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT33_S1_L001_9_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT33_S1_L001_29_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT33_S1_L001_9_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT33_S1_L001_29_L001_R2_001.fastq.gz
+
+
+Command: This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT34_S1_L001_10_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT34_S1_L001_30_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT34_S1_L001_10_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT34_S1_L001_30_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 11.423 s (15.426 µs/read; 3.89 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            740,473
+  Read 1 with adapter:                 732,087 (98.9%)
+  Read 2 with adapter:                 661,380 (89.3%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       740,473 (100.0%)
+
+Total basepairs processed:   444,972,079 bp
+  Read 1:   222,752,059 bp
+  Read 2:   222,220,020 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    418,623,554 bp (94.1%)
+  Read 1:   210,313,801 bp
+  Read 2:   208,309,753 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 91 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 62.6%
+  C: 14.3%
+  G: 2.2%
+  T: 20.9%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	83	11569.9	0	83
+4	1	2892.5	0	1
+5	1	723.1	0	1
+48	1	0.0	1	0 1
+67	1	0.0	1	0 1
+74	1	0.0	1	0 1
+97	1	0.0	1	0 1
+134	1	0.0	1	0 1
+135	1	0.0	1	0 1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 731996 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	197	11569.9	0	197
+4	1	2892.5	0	1
+6	1	180.8	0	1
+13	8	0.0	1	4 4
+14	21	0.0	1	0 21
+15	39	0.0	1	7 32
+16	6833	0.0	1	510 6323
+17	721595	0.0	1	649657 71938
+18	3301	0.0	1	252 3049
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 563 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 41.6%
+  C: 15.6%
+  G: 11.5%
+  T: 31.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	509	11569.9	0	509
+4	1	2892.5	0	1
+5	45	723.1	0	45
+6	1	180.8	0	1
+7	3	45.2	0	3
+8	1	11.3	0	1
+11	1	0.2	1	0 1
+13	1	0.0	1	0 1
+14	1	0.0	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 660817 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	268	11569.9	0	268
+4	5	2892.5	0	5
+5	8	723.1	0	8
+6	12	180.8	0	12
+11	2	0.2	1	0 2
+14	1	0.0	1	1
+15	3	0.0	1	1 2
+16	4	0.0	1	1 3
+17	1	0.0	1	0 1
+18	11	0.0	1	4 7
+19	251	0.0	1	7 44 200
+20	14139	0.0	2	478 9858 3803
+21	642416	0.0	2	441413 147374 53629
+22	2526	0.0	2	238 1539 749
+23	1	0.0	2	0 0 1
+59	1	0.0	5	0 0 0 0 0 1
+60	1	0.0	5	0 0 0 0 0 1
+61	34	0.0	5	0 0 2 9 10 13
+62	654	0.0	5	0 23 70 125 191 245
+63	136	0.0	5	0 3 12 23 41 57
+64	342	0.0	5	0 2 22 50 110 158
+65	1	0.0	5	0 0 0 0 0 1
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT35_S1_L001_11_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT35_S1_L001_31_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT35_S1_L001_11_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT35_S1_L001_31_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 10.377 s (15.646 µs/read; 3.83 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            663,263
+  Read 1 with adapter:                 654,460 (98.7%)
+  Read 2 with adapter:                 611,354 (92.2%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       663,263 (100.0%)
+
+Total basepairs processed:   398,459,641 bp
+  Read 1:   199,425,451 bp
+  Read 2:   199,034,190 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    374,504,194 bp (94.0%)
+  Read 1:   188,307,044 bp
+  Read 2:   186,197,150 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 104 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 74.0%
+  C: 17.3%
+  G: 1.9%
+  T: 6.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	92	10363.5	0	92
+5	6	647.7	0	6
+30	1	0.0	1	0 1
+59	1	0.0	1	0 1
+73	1	0.0	1	0 1
+75	2	0.0	1	0 2
+94	1	0.0	1	0 1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 654356 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	209	10363.5	0	209
+6	2	161.9	0	2
+12	2	0.0	1	0 2
+13	11	0.0	1	6 5
+14	27	0.0	1	1 26
+15	43	0.0	1	5 38
+16	6019	0.0	1	369 5650
+17	645285	0.0	1	577197 68088
+18	2755	0.0	1	227 2528
+19	1	0.0	1	0 1
+54	2	0.0	4	0 0 0 1 1
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 263 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 41.1%
+  C: 16.0%
+  G: 12.9%
+  T: 30.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	231	10363.5	0	231
+4	2	2590.9	0	2
+5	27	647.7	0	27
+7	2	40.5	0	2
+11	1	0.2	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 611091 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	30	10363.5	0	30
+4	5	2590.9	0	5
+5	1	647.7	0	1
+7	2	40.5	0	2
+9	1	2.5	0	0 1
+10	1	0.6	1	0 1
+11	1	0.2	1	1
+13	2	0.0	1	1 1
+15	1	0.0	1	0 1
+16	2	0.0	1	0 2
+17	6	0.0	1	2 4
+18	10	0.0	1	0 10
+19	235	0.0	1	3 24 208
+20	13389	0.0	2	530 9525 3334
+21	594343	0.0	2	428592 123623 42128
+22	2689	0.0	2	311 1708 670
+23	8	0.0	2	0 5 3
+61	15	0.0	5	0 0 0 1 4 10
+62	196	0.0	5	0 1 18 47 65 65
+63	62	0.0	5	0 0 4 14 26 18
+64	87	0.0	5	0 0 11 16 27 33
+65	3	0.0	5	0 0 0 0 3
+66	1	0.0	5	0 0 0 0 0 1
+73	1	0.0	5	0 0 0 0 0 1
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT36_S1_L001_12_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT36_S1_L001_32_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT36_S1_L001_12_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT36_S1_L001_32_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 28.059 s (15.709 µs/read; 3.82 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,786,185
+  Read 1 with adapter:               1,762,611 (98.7%)
+  Read 2 with adapter:               1,625,013 (91.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):     1,786,185 (100.0%)
+
+Total basepairs processed: 1,073,088,521 bp
+  Read 1:   537,110,941 bp
+  Read 2:   535,977,580 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):  1,008,988,202 bp (94.0%)
+  Read 1:   507,165,089 bp
+  Read 2:   501,823,113 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 163 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 81.6%
+  C: 13.5%
+  G: 3.1%
+  T: 1.8%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	145	27909.1	0	145
+5	4	1744.3	0	4
+69	1	0.0	1	0 1
+74	1	0.0	1	0 1
+75	6	0.0	1	0 6
+76	1	0.0	1	0 1
+135	5	0.0	1	0 5
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 1762448 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	611	27909.1	0	611
+4	1	6977.3	0	1
+5	1	1744.3	0	1
+11	1	0.4	1	1
+12	4	0.1	1	1 3
+13	25	0.0	1	17 8
+14	67	0.0	1	0 67
+15	97	0.0	1	8 89
+16	16066	0.0	1	1089 14977
+17	1738013	0.0	1	1557710 180303
+18	7559	0.0	1	551 7008
+21	2	0.0	2	0 2
+53	1	0.0	4	0 0 0 0 1
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 893 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 38.6%
+  C: 16.2%
+  G: 10.8%
+  T: 34.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	769	27909.1	0	769
+4	3	6977.3	0	3
+5	94	1744.3	0	94
+6	3	436.1	0	3
+7	15	109.0	0	15
+8	3	27.3	0	3
+9	3	6.8	0	0 3
+10	1	1.7	1	0 1
+16	1	0.0	1	0 1
+98	1	0.0	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 1624120 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	72	27909.1	0	72
+4	1	6977.3	0	1
+5	3	1744.3	0	3
+6	9	436.1	0	9
+10	3	1.7	1	1 2
+11	2	0.4	1	1 1
+12	3	0.1	1	1 2
+13	1	0.0	1	1
+14	7	0.0	1	3 4
+15	3	0.0	1	3
+16	7	0.0	1	2 5
+17	3	0.0	1	1 2
+18	41	0.0	1	5 36
+19	584	0.0	1	10 70 504
+20	33880	0.0	2	1069 23012 9799
+21	1581480	0.0	2	1066930 374006 140544
+22	6194	0.0	2	512 3778 1904
+23	12	0.0	2	0 2 10
+59	1	0.0	5	0 0 0 1
+60	6	0.0	5	0 0 1 0 1 4
+61	61	0.0	5	0 0 4 16 20 21
+62	1029	0.0	5	0 35 108 195 313 378
+63	276	0.0	5	0 7 26 55 92 96
+64	430	0.0	5	0 9 32 59 133 197
+65	12	0.0	5	0 0 0 3 3 6
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT48_S1_L001_13_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT48_S1_L001_33_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT48_S1_L001_13_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT48_S1_L001_33_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 11.646 s (15.693 µs/read; 3.82 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            742,129
+  Read 1 with adapter:                 732,506 (98.7%)
+  Read 2 with adapter:                 677,468 (91.3%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       742,129 (100.0%)
+
+Total basepairs processed:   445,710,688 bp
+  Read 1:   223,049,676 bp
+  Read 2:   222,661,012 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    419,042,504 bp (94.0%)
+  Read 1:   210,604,241 bp
+  Read 2:   208,438,263 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 141 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 78.0%
+  C: 17.0%
+  G: 1.4%
+  T: 3.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	116	11595.8	0	116
+5	5	724.7	0	5
+12	1	0.0	1	0 1
+26	1	0.0	1	0 1
+27	1	0.0	1	0 1
+61	1	0.0	1	0 1
+74	1	0.0	1	0 1
+75	4	0.0	1	0 4
+114	1	0.0	1	0 1
+116	2	0.0	1	0 2
+135	7	0.0	1	0 7
+136	1	0.0	1	0 1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 732365 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	245	11595.8	0	245
+12	2	0.0	1	0 2
+13	15	0.0	1	9 6
+14	21	0.0	1	3 18
+15	43	0.0	1	5 38
+16	6672	0.0	1	428 6244
+17	722297	0.0	1	648266 74031
+18	3064	0.0	1	216 2848
+19	1	0.0	1	0 1
+54	5	0.0	4	0 0 0 5
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 488 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 43.4%
+  C: 16.8%
+  G: 13.5%
+  T: 26.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	415	11595.8	0	415
+4	4	2898.9	0	4
+5	49	724.7	0	49
+6	1	181.2	0	1
+7	12	45.3	0	12
+9	1	2.8	0	0 1
+10	3	0.7	1	0 3
+11	2	0.2	1	0 2
+13	1	0.0	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 676980 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	61	11595.8	0	61
+4	2	2898.9	0	2
+5	1	724.7	0	1
+14	2	0.0	1	2
+15	2	0.0	1	0 2
+16	4	0.0	1	1 3
+17	3	0.0	1	1 2
+18	16	0.0	1	1 15
+19	342	0.0	1	1 43 298
+20	14411	0.0	2	489 10803 3119
+21	658820	0.0	2	503329 120382 35109
+22	2870	0.0	2	318 1885 667
+23	15	0.0	2	0 6 9
+59	1	0.0	5	0 0 0 0 0 1
+61	10	0.0	5	0 0 0 1 2 7
+62	248	0.0	5	0 3 16 30 82 117
+63	58	0.0	5	0 0 3 8 17 30
+64	110	0.0	5	0 0 3 25 29 53
+65	4	0.0	5	0 0 0 0 1 3
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT51_S1_L001_15_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT51_S1_L001_35_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT51_S1_L001_15_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT51_S1_L001_35_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 10.733 s (15.631 µs/read; 3.84 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            686,674
+  Read 1 with adapter:                 677,839 (98.7%)
+  Read 2 with adapter:                 613,515 (89.3%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       686,674 (100.0%)
+
+Total basepairs processed:   412,416,587 bp
+  Read 1:   206,383,737 bp
+  Read 2:   206,032,850 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    388,005,820 bp (94.1%)
+  Read 1:   194,868,297 bp
+  Read 2:   193,137,523 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 167 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 91.0%
+  C: 8.4%
+  G: 0.0%
+  T: 0.6%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	159	10729.3	0	159
+5	1	670.6	0	1
+135	7	0.0	1	0 7
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 677672 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	223	10729.3	0	223
+13	8	0.0	1	5 3
+14	15	0.0	1	0 15
+15	34	0.0	1	9 25
+16	5923	0.0	1	386 5537
+17	668691	0.0	1	600626 68065
+18	2777	0.0	1	185 2592
+19	1	0.0	1	0 1
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 475 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 41.9%
+  C: 15.4%
+  G: 12.2%
+  T: 30.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	410	10729.3	0	410
+4	2	2682.3	0	2
+5	53	670.6	0	53
+7	6	41.9	0	6
+8	2	10.5	0	2
+10	2	0.7	1	0 2
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 613040 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	44	10729.3	0	44
+4	5	2682.3	0	5
+5	15	670.6	0	15
+6	2	167.6	0	2
+7	2	41.9	0	2
+13	1	0.0	1	0 1
+14	2	0.0	1	1 1
+15	4	0.0	1	0 4
+17	2	0.0	1	2
+18	10	0.0	1	0 10
+19	242	0.0	1	3 28 211
+20	12861	0.0	2	428 8883 3550
+21	596640	0.0	2	418234 132256 46150
+22	2437	0.0	2	191 1509 737
+23	2	0.0	2	0 0 2
+59	1	0.0	5	0 0 0 0 0 1
+60	3	0.0	5	0 0 0 0 2 1
+61	22	0.0	5	0 0 0 7 8 7
+62	451	0.0	5	0 15 37 77 125 197
+63	102	0.0	5	0 1 4 16 27 54
+64	189	0.0	5	0 2 15 29 71 72
+65	3	0.0	5	0 0 0 0 0 3
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT52_S1_L001_16_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT52_S1_L001_36_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT52_S1_L001_16_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT52_S1_L001_36_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 13.992 s (15.477 µs/read; 3.88 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            904,059
+  Read 1 with adapter:                 893,729 (98.9%)
+  Read 2 with adapter:                 815,064 (90.2%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       904,059 (100.0%)
+
+Total basepairs processed:   543,096,014 bp
+  Read 1:   271,896,515 bp
+  Read 2:   271,199,499 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    510,973,614 bp (94.1%)
+  Read 1:   256,709,843 bp
+  Read 2:   254,263,771 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 50 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 64.0%
+  C: 32.0%
+  G: 2.0%
+  T: 2.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	34	14125.9	0	34
+12	1	0.1	1	0 1
+54	2	0.0	1	0 2
+65	1	0.0	1	0 1
+134	1	0.0	1	0 1
+135	1	0.0	1	0 1
+140	1	0.0	1	0 1
+190	1	0.0	1	0 1
+228	1	0.0	1	0 1
+229	2	0.0	1	0 2
+230	5	0.0	1	0 5
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 893679 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	273	14125.9	0	273
+6	3	220.7	0	3
+13	17	0.0	1	9 8
+14	43	0.0	1	2 41
+15	43	0.0	1	5 38
+16	8410	0.0	1	528 7882
+17	880936	0.0	1	792580 88356
+18	3953	0.0	1	322 3631
+19	1	0.0	1	0 1
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 564 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 39.7%
+  C: 13.7%
+  G: 14.0%
+  T: 32.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	506	14125.9	0	506
+4	4	3531.5	0	4
+5	48	882.9	0	48
+7	5	55.2	0	5
+11	1	0.2	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 814500 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	10906	14125.9	0	10906
+4	4	3531.5	0	4
+5	3	882.9	0	3
+6	14	220.7	0	14
+7	1	55.2	0	1
+10	1	0.9	1	0 1
+11	2	0.2	1	0 2
+15	2	0.0	1	0 2
+16	2	0.0	1	0 2
+17	3	0.0	1	0 3
+18	17	0.0	1	2 15
+19	306	0.0	1	2 46 258
+20	16715	0.0	2	585 11203 4927
+21	782533	0.0	2	511846 194666 76021
+22	3011	0.0	2	294 1785 932
+23	7	0.0	2	0 2 5
+45	1	0.0	4	0 0 0 1
+60	1	0.0	5	0 0 0 0 0 1
+61	28	0.0	5	0 0 0 3 10 15
+62	560	0.0	5	0 18 52 100 164 226
+63	140	0.0	5	0 5 6 20 31 78
+64	241	0.0	5	0 7 15 39 68 112
+65	2	0.0	5	0 0 0 1 1
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT53_S1_L001_17_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT53_S1_L001_37_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT53_S1_L001_17_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT53_S1_L001_37_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 9.245 s (15.671 µs/read; 3.83 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            589,913
+  Read 1 with adapter:                 583,160 (98.9%)
+  Read 2 with adapter:                 519,118 (88.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       589,913 (100.0%)
+
+Total basepairs processed:   354,430,999 bp
+  Read 1:   177,416,222 bp
+  Read 2:   177,014,777 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    333,631,616 bp (94.1%)
+  Read 1:   167,509,448 bp
+  Read 2:   166,122,168 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 108 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 86.1%
+  C: 8.3%
+  G: 1.9%
+  T: 3.7%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	107	9217.4	0	107
+67	1	0.0	1	0 1
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 583052 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	173	9217.4	0	173
+13	8	0.0	1	4 4
+14	17	0.0	1	0 17
+15	35	0.0	1	4 31
+16	5462	0.0	1	376 5086
+17	574890	0.0	1	518060 56830
+18	2465	0.0	1	213 2252
+54	2	0.0	4	0 0 0 2
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 465 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 40.4%
+  C: 18.1%
+  G: 13.3%
+  T: 28.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	403	9217.4	0	403
+4	1	2304.3	0	1
+5	53	576.1	0	53
+6	1	144.0	0	1
+7	4	36.0	0	4
+8	1	9.0	0	1
+9	1	2.3	0	0 1
+10	1	0.6	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 518653 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	306	9217.4	0	306
+4	4	2304.3	0	4
+6	6	144.0	0	6
+7	24	36.0	0	24
+9	1	2.3	0	0 1
+14	1	0.0	1	0 1
+16	4	0.0	1	0 4
+18	13	0.0	1	1 12
+19	202	0.0	1	1 21 180
+20	10534	0.0	2	424 7158 2952
+21	505208	0.0	2	341585 117742 45881
+22	2001	0.0	2	203 1196 602
+23	4	0.0	2	0 1 3
+61	4	0.0	5	0 0 0 2 1 1
+62	209	0.0	5	0 3 13 35 62 96
+63	41	0.0	5	0 0 5 4 17 15
+64	89	0.0	5	0 1 7 12 18 51
+65	2	0.0	5	0 0 0 0 1 1
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT5_S1_L001_14_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT5_S1_L001_34_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT5_S1_L001_14_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT5_S1_L001_34_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 19.894 s (15.853 µs/read; 3.78 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:          1,254,862
+  Read 1 with adapter:               1,239,278 (98.8%)
+  Read 2 with adapter:               1,104,663 (88.0%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):     1,254,862 (100.0%)
+
+Total basepairs processed:   753,728,455 bp
+  Read 1:   377,179,619 bp
+  Read 2:   376,548,836 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    709,528,181 bp (94.1%)
+  Read 1:   356,126,809 bp
+  Read 2:   353,401,372 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 273 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 87.9%
+  C: 8.8%
+  G: 1.1%
+  T: 2.2%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	264	19607.2	0	264
+5	4	1225.5	0	4
+74	1	0.0	1	0 1
+75	2	0.0	1	0 2
+135	2	0.0	1	0 2
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 1239005 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	343	19607.2	0	343
+5	1	1225.5	0	1
+6	1	306.4	0	1
+13	11	0.0	1	4 7
+14	45	0.0	1	5 40
+15	65	0.0	1	18 47
+16	11993	0.0	1	839 11154
+17	1221299	0.0	1	1098660 122639
+18	5234	0.0	1	391 4843
+19	3	0.0	1	0 3
+23	2	0.0	2	0 1 1
+53	2	0.0	4	0 0 0 0 2
+54	6	0.0	4	0 0 0 3 3
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 960 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 37.5%
+  C: 13.9%
+  G: 13.6%
+  T: 35.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	808	19607.2	0	808
+4	3	4901.8	0	3
+5	118	1225.5	0	118
+6	1	306.4	0	1
+7	24	76.6	0	24
+8	1	19.1	0	1
+9	2	4.8	0	0 2
+10	1	1.2	1	0 1
+11	1	0.3	1	0 1
+16	1	0.0	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 1103703 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	1369	19607.2	0	1369
+4	26	4901.8	0	26
+5	2	1225.5	0	2
+6	11	306.4	0	11
+7	1	76.6	0	1
+10	2	1.2	1	0 2
+11	1	0.3	1	1
+15	2	0.0	1	1 1
+16	9	0.0	1	1 8
+17	9	0.0	1	8 1
+18	25	0.0	1	3 22
+19	397	0.0	1	6 70 321
+20	22205	0.0	2	793 13947 7465
+21	1075388	0.0	2	679601 279289 116498
+22	3977	0.0	2	377 2206 1394
+23	16	0.0	2	0 2 14
+59	1	0.0	5	0 0 0 0 0 1
+60	3	0.0	5	0 0 0 0 3
+61	16	0.0	5	0 0 0 1 8 7
+62	136	0.0	5	0 2 4 23 40 67
+63	53	0.0	5	0 0 3 8 13 29
+64	50	0.0	5	0 0 0 6 14 30
+65	4	0.0	5	0 0 0 0 0 4
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT6_S1_L001_18_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT6_S1_L001_38_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT6_S1_L001_18_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT6_S1_L001_38_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 13.113 s (15.676 µs/read; 3.83 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            836,502
+  Read 1 with adapter:                 826,495 (98.8%)
+  Read 2 with adapter:                 764,546 (91.4%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       836,502 (100.0%)
+
+Total basepairs processed:   502,389,582 bp
+  Read 1:   251,372,159 bp
+  Read 2:   251,017,423 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    472,223,531 bp (94.0%)
+  Read 1:   237,331,574 bp
+  Read 2:   234,891,957 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 176 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 89.8%
+  C: 7.4%
+  G: 2.3%
+  T: 0.6%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	171	13070.3	0	171
+26	1	0.0	1	0 1
+58	2	0.0	1	0 2
+75	2	0.0	1	0 2
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 826319 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	217	13070.3	0	217
+13	10	0.0	1	4 6
+14	21	0.0	1	1 20
+15	29	0.0	1	4 25
+16	7925	0.0	1	578 7347
+17	814639	0.0	1	734143 80496
+18	3475	0.0	1	274 3201
+19	3	0.0	1	0 3
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 436 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 46.1%
+  C: 18.3%
+  G: 11.5%
+  T: 24.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	387	13070.3	0	387
+4	1	3267.6	0	1
+5	40	816.9	0	40
+7	7	51.1	0	7
+10	1	0.8	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 764110 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	259	13070.3	0	259
+5	4	816.9	0	4
+12	7	0.0	1	4 3
+14	1	0.0	1	1
+16	1	0.0	1	0 1
+17	5	0.0	1	1 4
+18	26	0.0	1	3 23
+19	356	0.0	1	4 41 311
+20	16432	0.0	2	515 11274 4643
+21	741860	0.0	2	514646 169295 57919
+22	2827	0.0	2	289 1668 870
+23	9	0.0	2	0 1 8
+59	4	0.0	5	0 0 0 0 2 2
+60	5	0.0	5	0 0 0 3 1 1
+61	69	0.0	5	0 0 4 15 20 30
+62	1205	0.0	5	0 55 155 265 318 412
+63	318	0.0	5	0 11 24 47 88 148
+64	706	0.0	5	0 15 73 143 204 271
+65	16	0.0	5	0 0 1 3 5 7
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+This is cutadapt 4.9 with Python 3.10.14
+Command line parameters: --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT9_S1_L001_19_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT9_S1_L001_39_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT9_S1_L001_19_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT9_S1_L001_39_L001_R2_001.fastq.gz
+Processing paired-end reads on 14 cores ...
+Finished in 14.821 s (15.478 µs/read; 3.88 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:            957,543
+  Read 1 with adapter:                 945,677 (98.8%)
+  Read 2 with adapter:                 877,788 (91.7%)
+
+== Read fate breakdown ==
+Pairs that were too short:                   0 (0.0%)
+Pairs written (passing filters):       957,543 (100.0%)
+
+Total basepairs processed:   575,242,686 bp
+  Read 1:   287,907,297 bp
+  Read 2:   287,335,389 bp
+Quality-trimmed:                       0 bp (0.0%)
+  Read 1:             0 bp
+  Read 2:             0 bp
+Total written (filtered):    540,752,736 bp (94.0%)
+  Read 1:   271,843,110 bp
+  Read 2:   268,909,626 bp
+
+=== First read: Adapter 1 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 220 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 85.5%
+  C: 9.1%
+  G: 3.6%
+  T: 1.8%
+  none/other: 0.0%
+WARNING:
+    The adapter is preceded by 'A' extremely often.
+    The provided adapter sequence could be incomplete at its 5' end.
+    Ignore this warning when trimming primers.
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	214	14961.6	0	214
+5	2	935.1	0	2
+115	1	0.0	1	0 1
+135	3	0.0	1	0 3
+
+
+=== First read: Adapter 2 ===
+
+Sequence: TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG; Type: regular 5'; Length: 50; Trimmed: 945457 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	308	14961.6	0	308
+6	1	233.8	0	1
+11	2	0.2	1	2
+12	2	0.1	1	0 2
+13	27	0.0	1	14 13
+14	29	0.0	1	4 25
+15	61	0.0	1	10 51
+16	9155	0.0	1	555 8600
+17	931811	0.0	1	838522 93289
+18	4059	0.0	1	304 3755
+19	2	0.0	1	0 2
+
+
+=== Second read: Adapter 3 ===
+
+Sequence: CTGTCTCTTATACACATCT; Type: regular 3'; Length: 19; Trimmed: 446 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Bases preceding removed adapters:
+  A: 35.7%
+  C: 15.2%
+  G: 13.9%
+  T: 35.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	383	14961.6	0	383
+4	2	3740.4	0	2
+5	41	935.1	0	41
+7	17	58.4	0	17
+8	1	14.6	0	1
+9	1	3.7	0	0 1
+20	1	0.0	1	0 1
+
+
+=== Second read: Adapter 4 ===
+
+Sequence: GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC; Type: regular 5'; Length: 55; Trimmed: 877342 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-39 bp: 3; 40-49 bp: 4; 50-55 bp: 5
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	261	14961.6	0	261
+4	8	3740.4	0	8
+6	1	233.8	0	1
+13	5	0.0	1	2 3
+14	1	0.0	1	1
+15	3	0.0	1	1 2
+16	7	0.0	1	0 7
+17	9	0.0	1	6 3
+18	30	0.0	1	2 28
+19	403	0.0	1	4 50 349
+20	19158	0.0	2	734 13713 4711
+21	853634	0.0	2	612117 178484 63033
+22	3291	0.0	2	409 2041 841
+23	8	0.0	2	0 4 4
+61	19	0.0	5	0 0 1 3 7 8
+62	263	0.0	5	0 9 26 45 75 108
+63	122	0.0	5	0 2 5 22 37 56
+64	115	0.0	5	0 0 9 17 25 64
+65	3	0.0	5	0 0 0 0 2 1
+72	1	0.0	5	0 1
+
+
+WARNING:
+    One or more of your adapter sequences may be incomplete.
+    Please see the detailed output above.
+cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT34_S1_L001_10_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT34_S1_L001_30_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT34_S1_L001_10_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT34_S1_L001_30_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT35_S1_L001_11_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT35_S1_L001_31_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT35_S1_L001_11_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT35_S1_L001_31_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT36_S1_L001_12_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT36_S1_L001_32_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT36_S1_L001_12_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT36_S1_L001_32_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT48_S1_L001_13_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT48_S1_L001_33_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT48_S1_L001_13_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT48_S1_L001_33_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT51_S1_L001_15_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT51_S1_L001_35_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT51_S1_L001_15_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT51_S1_L001_35_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT52_S1_L001_16_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT52_S1_L001_36_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT52_S1_L001_16_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT52_S1_L001_36_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT53_S1_L001_17_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT53_S1_L001_37_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT53_S1_L001_17_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT53_S1_L001_37_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT5_S1_L001_14_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT5_S1_L001_34_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT5_S1_L001_14_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT5_S1_L001_34_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT6_S1_L001_18_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT6_S1_L001_38_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT6_S1_L001_18_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT6_S1_L001_38_L001_R2_001.fastq.gz
+
+
+Command: cutadapt --cores 14 --error-rate 0.1 --times 1 --overlap 3 --minimum-length 1 -q 0,0 --quality-base 33 -o /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT9_S1_L001_19_L001_R1_001.fastq.gz -p /tmp/qiime2/makshuf/processes/105752-1736934614.0@makshuf/tmp/q2-OutPath-m14n3rdy/RAT9_S1_L001_39_L001_R2_001.fastq.gz --adapter CTGTCTCTTATACACATCT --front TCGTCGGCAGCGTCAGATGTGTATAAGAGACAGCCTACGGGNGGCWGCAG -A CTGTCTCTTATACACATCT -G GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAGGACTACHVGGGTATCTAATCC /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT9_S1_L001_19_L001_R1_001.fastq.gz /tmp/qiime2/makshuf/data/4bcd95e9-e84e-41e6-9990-a801c213903f/data/RAT9_S1_L001_39_L001_R2_001.fastq.gz
+
+Saved SampleData[PairedEndSequencesWithQuality] to: ad_pr_trimmed-demux.qza
